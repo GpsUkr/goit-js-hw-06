@@ -22,3 +22,12 @@ const imagesMarkup = images.map((image) => `
 `).join("");
 
 gallery.insertAdjacentHTML("beforeend", imagesMarkup);
+
+
+/* Цей скрипт знаходить елемент з класом.gallery за допомогою document.querySelector(), створює розмітку зображень за допомогою методу.map(), який повертає масив рядків HTML, що представляють кожен елемент галереї.Далі рядки об'єднуються в один рядок за допомогою методу .join(""), і остаточна розмітка додається до DOM за допомогою методу .insertAdjacentHTML("beforeend", imagesMarkup).
+
+Важливо звернути увагу на те, що рядок HTML містить класи.gallery - item і.gallery - image, які можна використовувати для оформлення галереї за допомогою CSS.
+
+
+ */
+

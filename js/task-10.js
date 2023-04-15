@@ -54,3 +54,44 @@ function getRandomHexColor() {
 Затем мы создаем обработчики кликов на кнопки создания и удаления блоков и привязываем их к соответствующим кнопкам.
 
 И наконец, мы создаем функцию getRandomHexColor для генерации случайных цветов в формате HEX. */
+
+// const form = document.querySelector('.login-form');
+
+// form.addEventListener('submit', handleSubmit);
+
+// function handleSubmit(event) {
+//     event.preventDefault();
+
+//     const emailInput = form.elements.email.value;
+//     const passwordInput = form.elements.password.value;
+
+//     if (emailInput.value === '' || passwordInput.value === '') {
+//         alert('Please fill in all fields');
+//         return;
+//     }
+
+//     const formData = {
+//         email: emailInput.value,
+//         password: passwordInput.value,
+//     };
+
+//     console.log(formData);
+//     form.reset();
+// }
+
+// const inputEl = document.querySelector('#validation-input');
+
+// inputEl.addEventListener('blur', onInputBlur);
+
+// function onInputBlur(event) {
+//     const inputLength = event.target.dataset.length;
+//     const inputValue = event.target.value.trim().length;
+
+//     if (inputValue === Number(inputLength)) {
+//         event.target.classList.add('valid');
+//         event.target.classList.remove('invalid');
+//     } else {
+//         event.target.classList.add('invalid');
+//         event.target.classList.remove('valid');
+//     }
+// }

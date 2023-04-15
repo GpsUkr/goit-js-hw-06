@@ -1,19 +1,21 @@
-const inputEl = document.querySelector('#validation-input');
+function validateInput(input) {
+    const requiredLength = input.dataset.length;
+    const enteredValue = input.value;
 
-inputEl.addEventListener('blur', onInputBlur);
-
-function onInputBlur(event) {
-    const inputLength = event.target.dataset.length;
-    const inputValue = event.target.value.trim().length;
-
-    if (inputValue === Number(inputLength)) {
-        event.target.classList.add('valid');
-        event.target.classList.remove('invalid');
+    if (enteredValue.length === +requiredLength) {
+        input.classList.add('valid');
+        input.classList.remove('invalid');
     } else {
-        event.target.classList.add('invalid');
-        event.target.classList.remove('valid');
+        input.classList.add('invalid');
+        input.classList.remove('valid');
     }
 }
+
+const inputRef = document.querySelector('#validation-input');
+
+inputRef.addEventListener('blur', () => {
+    validateInput(inputRef);
+});
 
 /* Основні кроки:
 
